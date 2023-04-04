@@ -1,4 +1,4 @@
-#Intro:
+<h1>Intro:</h1>
 Hello, this tool makes your workflow faster! How such a pain if you'd like to export a video from your Houdini viewport, the traditional way is to create the flipbook with MPlay and wait for it for lunch, then export the video as MOV or AVI then converted to MP4 using Handbrake or Media Encoder.
 
 I came up with a better way to generate flipbooks, it's fast and very handy, and you'll get to use it so quickly.
