@@ -8,14 +8,14 @@ Download the ZIP file and move it to your Houdini Preference Folder "C:\Users\{U
 
 *Please take a backup from your preferences folder before installing
 
-#How to use:
+# How to use:
 After installing, restart Houdini if it's opened, you will find a new menu called "Tools>Run Flipbook>Run" added at the main Houdini menubar or just press CTRL+SHIFT+F to start the flipbook,
 
 You can edit the options by pressing CTRL+ALT+SHIFT+F to modify the start frame and end frame, you can type expressions such as $FSTART and $FEND or type numbers like 1001, if you changed these default settings, it will be saved into the HIP file so when you restart Houdini you can find the modifications present. If you need all viewports to be rendered type 1 in All Viewports
 
-#How it works:
+# How it works:
 It saves a sequence of JPG images in your temp folder from your viewport baked into any LUTs or color corrections, then it runs FFMPEG.exe -embedded in the installation folder- command to convert it to MP4 format directly to your HIP Folder 📂 then opens that file with your default video player at your windows and prints to console the output path.
 It works by default at SOPs and it can run at the stage context with Houdini GL, Karma, and Karma XPU.
 
-#Release Notes:
+# Release Notes:
 It works with Windows only and Houdini version should be higher than 19.0 (Python 3+).
