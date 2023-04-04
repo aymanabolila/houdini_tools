@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mainMenu>
+    <menuBar>
+        <subMenu id="AAB_Tools">
+            <label>Tools</label>
+
+            <subMenu id="AAB_flipbook">
+                <label>Run Flipbook</label>
+
+                    <scriptItem id="AAB_Flipbook_Run">
+                        <label>Run</label>
+                            <scriptPath>$HOUDINI_USER_PREF_DIR/scripts/aab_flipbook/script/aab_run_flipbook.py</scriptPath>
+                    </scriptItem>
+                    <scriptItem id="AAB_Flipbook_Settings">
+                        <label>Flipbook Settings</label>
+                            <scriptPath>$HOUDINI_USER_PREF_DIR/scripts/aab_flipbook/script/aab_flipbook_settings.py</scriptPath>
+                    </scriptItem>
+            </subMenu>
+        </subMenu>
+    </menuBar>
+</mainMenu>

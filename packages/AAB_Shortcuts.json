@@ -1,0 +1,11 @@
+{
+    "env": [
+        {
+            "HOUDINI_PATH": [
+                {
+                "value": "$HOUDINI_USER_PREF_DIR/scripts/aab_flipbook"
+                }
+            ]
+        }
+    ]
+}
