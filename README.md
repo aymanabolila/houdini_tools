@@ -5,7 +5,7 @@ Hello, this tool makes your workflow faster! How such a pain if you'd like to ex
 
 I came up with a better way to generate flipbooks, it's fast and very handy, and you'll get to use it so quickly.
 
-Installation guide:
+* Installation guide:
 Download the ZIP file and extract it then move the RAR file in your Houdini Preference Folder `C:\Users\{USER}\Documents\houdiniXX.X`, then extract it here after that remove the RAR file.
 
 * _Please take a backup from your preferences folder before installing_
