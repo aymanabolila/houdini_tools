@@ -19,6 +19,6 @@ You can edit the options by pressing `CTRL+ALT+SHIFT+F` to modify the start fram
 It saves a sequence of JPG images in your temp folder from your viewport baked into any LUTs or color corrections, then it runs FFMPEG.exe _embedded in the installation folder_ command to convert it to MP4 format directly to your `$HIP` Folder 📂 then opens that file with your default video player at your windows and prints to console the output path.
 It works by default at SOPs and it can run at the stage context with Houdini GL, Karma, and Karma XPU.
 
-# Requrments
+# Requrments:
 * Windows OS
 * Houdini 19.0 (Python 3+) and higher.
