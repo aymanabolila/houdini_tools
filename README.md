@@ -1,4 +1,4 @@
-[![Video Break Down](https://i.imgur.com/DmPTM3o.jpg)](https://vimeo.com/814534713)
+[![Video Break Down](imgs/Vimeo_FlipbookToMp4.jpg)](https://vimeo.com/814534713)
 
 # Intro:
 Hello, this tool makes your workflow faster! How such a pain if you'd like to export a video from your Houdini viewport, the traditional way is to create the flipbook with MPlay and wait for it for lunch, then export the video as MOV or AVI then converted to MP4 using Handbrake or Media Encoder.
