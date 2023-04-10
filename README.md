@@ -7,7 +7,7 @@ Hello, this tool makes your workflow faster! How such a pain if you'd like to ex
 I came up with a better way to generate flipbooks, it's fast and very handy, and you'll get to use it so quickly.
 
 # Installation guide:
-Download the ZIP file [from here](https://github.com/aymanabolila/houdini_tools/releases/download/Downloads/AAB_flipbook_to_mp4_0.0.2.zip), extract it then move  `packages` and `scripts` folders to your Houdini Preference Folder `C:\Users\{USER}\Documents\houdiniXX.X`.
+Download the ZIP file [from here](https://github.com/aymanabolila/houdini_tools/releases/download/Downloads/AAB_flipbook_to_mp4_0.0.3.zip), extract it then move  `packages` and `scripts` folders to your Houdini Preference Folder `C:\Users\{USER}\Documents\houdiniXX.X`.
 
 * _Please take a backup from your preferences folder before installing_
 
