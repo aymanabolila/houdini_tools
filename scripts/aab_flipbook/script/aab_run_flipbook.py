@@ -5,7 +5,7 @@ Created by: Ayman Abolila: https://about.me/ayman.abolila
 Created date: 4/4/2023
 '''
 
-
+import hou
 import os
 import subprocess
 import tempfile
@@ -26,10 +26,12 @@ try:
     start_frame = hou.session.start_frame
     end_frame = hou.session.end_frame
     all_viewports = hou.session.all_viewports
+    shotinfo = hou.session.shotinfo
 except:
     start_frame = '$FSTART'
     end_frame = '$FEND'
     all_viewports = '0'
+    shotinfo = '1'
 
 first_frame = int(hou.text.expandString(start_frame))
 end_frame = int(hou.text.expandString(end_frame))
@@ -51,8 +53,20 @@ flip_book_options.cropOutMaskOverlay(1)
 flip_book_options.outputToMPlay(0)
 scene.flipbook(scene.curViewport(), flip_book_options)
 
-
 # Construct the FFmpeg command
+camera_node = hou.ui.paneTabOfType(hou.paneTabType.SceneViewer).curViewport().camera()
+frame_num = f"'%{{eif\:n+{first_frame}\:d}}'"
+
+if camera_node:
+    camera = f"'Camera\\: {camera_node.name()}'"
+else:
+    camera = ''
+fontpath = r"/Windows/Fonts/arial.ttf"
+if shotinfo == '1':
+    video_filter = f'drawtext=fontsize=25:fontfile={fontpath}:text={frame_num}:x=(w-tw)/2: y=h-(2*lh): fontcolor=white: box=1: boxcolor=0x00000099, drawtext=fontsize=25:fontfile={fontpath}:text={camera}:x=(w-tw-10): y=10: fontcolor=white: box=1: boxcolor=0x00000099, scale=1920:-2'
+else:
+    video_filter = 'scale=1920:-2'
+
 command = [f'{hou.hscriptExpression("$HOUDINI_USER_PREF_DIR")}/scripts/aab_flipbook/script/ffmpeg.exe', '-y',  # Overwrite output file if it already exists
            '-f', 'image2',  # Input format is a sequence of images
            '-start_number',f'{str(first_frame)}',
@@ -60,7 +74,7 @@ command = [f'{hou.hscriptExpression("$HOUDINI_USER_PREF_DIR")}/scripts/aab_flipb
            '-i', f'{temp_dir}/flipbook/{video_name}_%{frame_padding}d.jpg',  # Set the input file pattern
            '-c:v', 'libx264',  # Use the libx264 codec to encode the video
            '-pix_fmt', 'yuv420p',  # Set the pixel format
-           '-vf','scale=1920:-2', # Fix Error: "width not divisible by 2"
+           '-vf', video_filter,
            video_path]  # Set the output path
           
 # Run the FFmpeg command
