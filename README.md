@@ -1,6 +1,6 @@
 [![Video Break Down](imgs/Vimeo_FlipbookToMp4.png)](https://vimeo.com/814534713)
 
-
+https://github.com/aymanabolila/houdini_tools/blob/Houdini-Flipbook-To-MP4/houdini_flipbook_to_mp4_tool%20(1080p).mp4
 # Intro:
 Hello, this tool makes your workflow faster! How such a pain if you'd like to export a video from your Houdini viewport, the traditional way is to create the flipbook with MPlay and wait for it for lunch, then export the video as MOV or AVI then converted to MP4 using Handbrake or Media Encoder.
 
