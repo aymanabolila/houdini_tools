@@ -16,7 +16,8 @@ After installing, restart Houdini if it's opened, you will find a new menu calle
 
 * You can edit the options by pressing `CTRL+ALT+SHIFT+F` to modify the start frame and end frame, you can type expressions such as `$FSTART` and `$FEND` or type numbers like `1001`, if you change these default settings, it will be saved into the `$HIP/flipbook/settings.json` file so when you restart Houdini you can find the modifications present.
 
-* Comment options can allow you to type your comments on top of the video output by writing HScript expressions, just type it in \` \`, you can change the font file and size as well if needed.
+* Comment options can allow you to type your comments on top of the video output by writing HScript expressions, just type it in \` \`, and you can change the font file and size as well if needed. You can type `[shotcam]` to print the camera that you see from.
+* A slider to change font text size.
 
 https://github.com/aymanabolila/houdini_tools/assets/95883280/c07aad90-2c6a-4dc6-995b-08158fd94999
 
@@ -24,12 +25,12 @@ https://github.com/aymanabolila/houdini_tools/assets/95883280/c07aad90-2c6a-4dc6
 
 https://github.com/aymanabolila/houdini_tools/assets/95883280/4162dad6-aca2-4273-b3ca-bb57e8dd9ad6
 
-* Feature to choose `.mov` format output for reacher colors and sharper quality
+* Feature to choose `.mov` format output for reacher colors and sharper quality.
 
 https://github.com/aymanabolila/houdini_tools/assets/95883280/50e63914-8d70-4f68-9cb8-3f3d67faef6a
 
 
-* Selecting custom font if needed
+* Selecting custom font if needed.
   
 
 https://github.com/aymanabolila/houdini_tools/assets/95883280/7936b9f3-0944-43a7-900d-d3b9a48760a7
